@@ -35,19 +35,19 @@ def comprime_imagem(centroides, indice, img, clusters):
   recuperado = recuperado.reshape(img.shape)
 
   # Plotando e salvando a imagem comprimida
-#   plt.figure(figsize=(10,5))
+  plt.figure(figsize=(10,5))
 
-#   plt.subplot(1,2,1)
-#   plt.imshow(img)
-#   plt.title("Original")
-#   plt.axis("off")
+  plt.subplot(1,2,1)
+  plt.imshow(img)
+  plt.title("Original")
+  plt.axis("off")
 
-#   plt.subplot(1,2,2)
-#   plt.imshow(recuperado)
-#   plt.title(f"{clusters} cores")
-#   plt.axis("off")
+  plt.subplot(1,2,2)
+  plt.imshow(recuperado)
+  plt.title(f"{clusters} cores")
+  plt.axis("off")
 
-#   plt.show()
+  plt.show()
 
   # Para salvar com cv2.imwrite, a imagem deve estar em BGR e com valores de 0 a 255 (uint8)
   # Primeiro, converte de RGB [0,1] para RGB [0,255]
