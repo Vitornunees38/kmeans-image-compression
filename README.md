@@ -1,40 +1,42 @@
-# Image Compression with K-Means
+# Compressão de Imagens com K-Means
 
-Image compression through color quantization using the K-Means clustering algorithm implemented from scratch in Python.
+Implementação do algoritmo K-Means, desenvolvido do zero em Python, para compressão de imagens por meio da quantização de cores.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![NumPy](https://img.shields.io/badge/NumPy-✓-orange)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-✓-green)
 
-## Overview
+---
 
-This project implements the K-Means clustering algorithm from scratch to perform image compression by reducing the number of colors in an image.
+## Visão Geral
 
-The project evaluates how the number of clusters and the convergence tolerance affect:
+Este projeto implementa o algoritmo de clusterização K-Means do zero para realizar compressão de imagens por meio da redução da quantidade de cores (quantização de cores).
 
-- Image quality
-- Mean Squared Error (MSE)
-- Compression ratio
-- Execution time
+Além da implementação do algoritmo, foram realizados experimentos para analisar como o número de clusters e o critério de convergência influenciam:
+
+- Qualidade visual da imagem
+- Erro Quadrático Médio (MSE)
+- Tempo de execução
+- Tamanho do arquivo gerado
 
 ---
 
-## Features
+## Funcionalidades
 
-- K-Means implemented from scratch
-- Image color quantization
-- Adjustable number of clusters
-- Adjustable convergence tolerance
-- MSE calculation
-- Compression ratio analysis
-- Execution time measurement
-- Result visualization
+- Implementação do algoritmo K-Means sem bibliotecas de clusterização
+- Quantização de cores em imagens
+- Número de clusters configurável
+- Tolerância de convergência configurável
+- Cálculo do Erro Quadrático Médio (MSE)
+- Comparação do tamanho dos arquivos
+- Medição do tempo de execução
+- Geração de gráficos para análise dos resultados
 
 ---
 
-## Project Structure
+## Estrutura do Projeto
 
-```
+```text
 .
 ├── images/
 │   └── compressed/
@@ -51,60 +53,62 @@ The project evaluates how the number of clusters and the convergence tolerance a
 
 ---
 
-## Results
+## Resultados
 
-### Original image
+### Imagem Original
 
 <img src="/images/paisagem.png">
 
-### Compressed images
+### Imagens Comprimidas
 
-*adicionar gif*
+<img src="https://i.imgflip.com/awps2h.gif">
+
+### Erro Quadrático Médio (MSE)
+
+<img src="/results/KxMSE.png">
+
+### Tempo de Execução
+
+<img src="/results/KxT.png">
+
+### Tamanho do Arquivo
+
+| Número de Clusters (K)     | Tamanho do arquivo (KB) |
+| -------------------------- | ----------------------- |
+| Imagem Original            | 419                     |
+| 2                          | 20,5                    |
+| 4                          | 34,3                    |
+| 8                          | 55,8                    |
+| 16                         | 151                     |
+| 32                         | 201                     |
+| 64                         | 247                     |
 
 ---
 
-### MSE
-
-*adicionar gráfico*
-
----
-
-### Execution Time
-
-*adicionar gráfico*
-
----
-
-### File Size
-
-*adicionar gráfico*
-
----
-
-## Technologies
+## Tecnologias Utilizadas
 
 - Python
 - NumPy
+- OpenCV
 - Matplotlib
-- Opencv
 
 ---
 
-## How to Run
+## Como Executar
 
-Clone the repository:
+Clone o repositório:
 
 ```bash
 git clone https://github.com/Vitornunees38/image-compression-kmeans.git
 ```
 
-Install dependencies:
+Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run:
+Execute o projeto:
 
 ```bash
 python main.py
@@ -112,18 +116,26 @@ python main.py
 
 ---
 
-## Algorithm
+## Funcionamento do Algoritmo
 
-The implementation follows the traditional K-Means workflow:
+A implementação segue o fluxo clássico do algoritmo K-Means:
 
-1. Initialize centroids
-2. Assign each pixel to its nearest centroid
-3. Recalculate centroids
-4. Repeat until convergence
-5. Reconstruct the image using centroid colors
+1. Inicialização dos centróides
+2. Associação de cada pixel ao centróide mais próximo
+3. Atualização dos centróides
+4. Repetição até que o critério de convergência seja atingido
+5. Reconstrução da imagem utilizando as cores dos centróides
 
 ---
 
-## Academic Context
+## Contexto Acadêmico
 
-This project was developed as the final assignment for the Scientific Computing course at the Federal University of Rio de Janeiro (UFRJ).
+Este projeto foi desenvolvido como trabalho final da disciplina de Computação Científica da Universidade Federal do Rio de Janeiro (UFRJ).
+
+---
+
+## Autor
+
+Vitor Nunes
+
+- GitHub: github.com/Vitornunees38
