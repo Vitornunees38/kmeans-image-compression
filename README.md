@@ -11,6 +11,9 @@ Implementação do algoritmo K-Means, desenvolvido do zero em Python, para compr
 ## Visão Geral
 
 Este projeto implementa o algoritmo de clusterização K-Means do zero para realizar compressão de imagens por meio da redução da quantidade de cores (quantização de cores).
+Representando a imagem como uma matriz de componentes tridimensionais (R,G,B) e realizando a clusterização dos pixels, subistitui-se cada pixel pelo valor do centróide do cluster ao qual é associado no espaço RGB.
+
+<img src="/results/3dplot_8clusters.png">
 
 Além da implementação do algoritmo, foram realizados experimentos para analisar como o número de clusters e o critério de convergência influenciam:
 
