@@ -55,7 +55,7 @@ The project evaluates how the number of clusters and the convergence tolerance a
 
 ### Original image
 
-<img src="/images/paisagem.png>
+<img src="/images/paisagem.png">
 
 ### Compressed images
 
