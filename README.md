@@ -59,25 +59,25 @@ The project evaluates how the number of clusters and the convergence tolerance a
 
 ### Compressed images
 
-*adicionar gif*
+<img src="https://i.imgflip.com/awps2h.gif">
 
 ---
 
 ### MSE
 
-*adicionar gráfico*
+<img src="/results/KxMSE.png">
 
 ---
 
 ### Execution Time
 
-*adicionar gráfico*
+<img src="/results/KxT.png">
 
 ---
 
 ### File Size
 
-*adicionar gráfico*
+<img src="/results/FileSize.png">
 
 ---
 
