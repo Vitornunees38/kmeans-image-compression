@@ -73,7 +73,6 @@ Além da implementação do algoritmo, foram realizados experimentos para analis
 
 ### Tamanho do Arquivo
 
-<img src="/results/FileSize.png">
 | Número de Clusters (K)     | Tamanho do arquivo (KB) |
 | -------------------------- | ----------------------- |
 | Imagem Original            | 419                     |
